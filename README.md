@@ -23,6 +23,7 @@ cd hayvanat-bahcesi-simulasyon
 
 # 3. Gerekli bağımlılıkları yükleyin (package.json varsa)
 npm install
+
 Simülasyonu başlatmak için:
 node App.js(bash)
 
