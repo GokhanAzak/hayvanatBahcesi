@@ -28,18 +28,6 @@ node App.js(bash)
 
 
 
-hayvanat-bahcesi/
-├── enums/            # Sabit değerler
-│   └── Cinsiyet.js   # Cinsiyet enum'ı
-├── classes/          # Hayvan sınıfları
-│   ├── Hayvan.js     # Temel sınıf
-│   ├── Aslan.js      # Aslan sınıfı
-│   └── ...           # Diğer hayvanlar
-├── utils/            # Yardımcı araçlar
-│   └── helper.js     # Matematik fonksiyonları
-├── App.js            # Ana simülasyon
-├── package.json      # Bağımlılıklar
-└── README.md         # Bu dosya
 
 
 
