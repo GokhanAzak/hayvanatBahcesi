@@ -1,0 +1,37 @@
+1. Tüm hayvan sınıfları import edilir
+2. Popülasyon oluşturulur:
+   - Koyun: 30 (15♂, 15♀)
+   - İnek: 10 (5♂, 5♀)
+   - Kanatlı: 20 (10♂, 10♀)
+   - Kurt: 10 (5♂, 5♀)
+   - Aslan: 8 (4♂, 4♀)
+   - Avcı: 1
+3. Bahçe sınırları ayarlanır (500x500)
+
+Hareket 1000 adım:
+  1. HAREKET:
+     - Her hayvan rastgele ±3 birim hareket eder
+     - Sınır kontrol: Math.max(0, Math.min(499, pozisyon))
+
+  2. AVLANMA:
+     for her hayvan:
+       if Kurt && (Koyun || Kanatlı) && mesafe ≤ 4 → avla
+       if Aslan && (Koyun || İnek) && mesafe ≤ 5 → avla
+       if Avcı && !Avcı && mesafe ≤ 8 → avla
+
+  3. ÇİFTLEŞME:
+     for her hayvan çifti:
+       if aynıTür && zıtCinsiyet && mesafe ≤ 3:
+         yeniYavru = rastgeleCinsiyet()
+         bahçeyeEkle(yeniYavru)
+
+
+
+ Mimari 
+ES Modülleri: Temiz bağımlılık yönetimi icin
+
+Strategy Pattern: Her hayvan türünün davranışları kendi sınıfında
+
+Single Responsibility: Her sınıf tek bir sorumluluğa sahip
+
+Open/Closed Principle: Yeni hayvan türleri kolayca eklenebilir
